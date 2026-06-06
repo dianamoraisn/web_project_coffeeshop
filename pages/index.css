@@ -121,6 +121,9 @@
   flex-direction: column;
 }
 
+.header__content {
+}
+
 .recipes {
   padding: 100px 80px;
   background-color: #0a2850;
