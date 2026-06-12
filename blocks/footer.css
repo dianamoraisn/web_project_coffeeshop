@@ -26,9 +26,14 @@
 }
 
 .footer__social {
-  position: absolute;
-  top: 60px;
-  right: 80px;
+  margin-left: auto;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 
 .footer__social-heading {
