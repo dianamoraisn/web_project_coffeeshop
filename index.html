@@ -23,7 +23,6 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
 
     <link rel="icon" href="./favicon.ico" />
@@ -122,71 +121,97 @@
             </div>
           </div>
         </section>
-<section class="reservation" id="reservation">
-  <h2 class="reservation__title">
-    Reservar uma mesa
-  </h2>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar uma mesa</h2>
 
-  <form class="reservation__form form">
-    <fieldset class="form__fieldset">
+          <form class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <label class="form__label">
+                Nome *
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Nome"
+                  required
+                />
+              </label>
 
-      <label class="form__label">
-        Nome *
-        <input
-          type="text"
-          class="form__input"
-          placeholder="Nome"
-          required
-        />
-      </label>
+              <label class="form__label">
+                Número de convidados *
+                <input
+                  type="number"
+                  class="form__input"
+                  placeholder="1-8"
+                  required
+                />
+              </label>
 
-      <label class="form__label">
-        Número de convidados *
-        <input
-          type="number"
-          class="form__input"
-          placeholder="1-8"
-          required
-        />
-      </label>
+              <label class="form__label">
+                Data & hora *
+                <input type="datetime-local" class="form__input" required />
+              </label>
 
-      <label class="form__label">
-        Data & hora *
-        <input
-          type="datetime-local"
-          class="form__input"
-          required
-        />
-      </label>
+              <label class="form__label">
+                Seu e-mail *
+                <input
+                  type="email"
+                  class="form__input"
+                  placeholder="email@email.com"
+                  required
+                />
+              </label>
 
-      <label class="form__label">
-        Seu e-mail *
-        <input
-          type="email"
-          class="form__input"
-          placeholder="email@email.com"
-          required
-        />
-      </label>
+              <button class="form__button" type="submit">
+                Reservar uma mesa
+              </button>
 
-      <button class="form__button" type="submit">
-        Reservar uma mesa
-      </button>
-
-      <label class="form__label form__label_type_checkbox">
-        <input
-          type="checkbox"
-          class="form__checkbox"
-          required
-        />
-        Eu concordo com os termos de uso
-      </label>
-
-    </fieldset>
-  </form>
-</section>
+              <label class="form__label form__label_type_checkbox">
+                <input type="checkbox" class="form__checkbox" required />
+                Eu concordo com os termos de uso
+              </label>
+            </fieldset>
+          </form>
+        </section>
       </main>
-      <footer class="footer"></footer>
+
+      <footer class="footer" id="footer">
+        <div class="footer__circle"></div>
+        <img
+          class="footer__logo"
+          src="./images/logo_coffeeshop_light.svg"
+          alt="Logo Triple Espresso"
+        />
+
+        <div class="footer__social">
+          <h2 class="footer__social-heading">Mídia social</h2>
+
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__social-link">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="Facebook"
+                  class="footer__social-icon"
+                />
+                Facebook
+              </a>
+            </li>
+
+            <li class="footer__list-item">
+              <a href="#" class="footer__social-link">
+                <img
+                  src="./images/instagram_white.svg"
+                  alt="Instagram"
+                  class="footer__social-icon"
+                />
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="footer__copyright">© 2024 Diana Morais</p>
+      </footer>
     </div>
   </body>
 </html>
